@@ -1,4 +1,4 @@
-#### Meaning of the table columns
+### Meaning of the table columns:
 
 #### Averaged word embeddings
 Embeddings created with the cell n°5 inside Prelearn.ipynb.  
@@ -41,7 +41,7 @@ The averaged word embedding of the document B get multiplied by 20 in order to s
 | RBF SVM <br> C = 500 <br> gamma = 10 | Accuracy:0.933108 <br> Precision:0.818182 <br> Recall:0.806604 <br> F1:0.812352| Accuracy:0.899238 <br> Precision:0.746032 <br> Recall:0.665094 <br> F1:0.703242 | Accuracy:0.902625 <br> Precision:0.746193 <br> Recall:0.693396 <br> F1:0.718826 | Accuracy:0.919560 <br> Precision:0.800000 <br> Recall:0.735849 <br> F1:0.766585 |
 | Random Forest | Accuracy:0.929721 <br> Precision:0.877193 <br> Recall:0.707547 <br> F1:0.783290| Accuracy:0.922947 <br> Precision:0.823529 <br> Recall:0.726415 <br> F1:0.771930 | Accuracy:0.928874 <br> Precision:0.844086 <br> Recall:0.740566 <br> F1:0.788945 | Accuracy:0.935648 <br> Precision:0.909639 <br> Recall:0.712264 <br> F1:0.798942 |
  
-#### How to run
+#### How to run:
 Execute the first four cells inside Prelearn.ipynb.
 
 Run cell 5 or 6 depending of the test you want to run:  
