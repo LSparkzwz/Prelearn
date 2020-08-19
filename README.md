@@ -1,2 +1,7 @@
-# Prelearn
-Based on: https://sites.google.com/view/prelearn20/task
+|  Fasttext             | Normal embeddings        | Biased: both weight 10% of doc length  | Biased: only A weight 10% of doc length | B doc embedding * weight(20) |
+| ------------- |-------------| -----------------| ----|---- |
+| Logistic Regression  | Accuracy:0.824725 <br> Precision:0.857143 <br> Recall:0.028302 <br> F1:0.054795| Accuracy:0.890771 <br> Precision:0.832000 <br> Recall:0.490566 <br> F1:0.617211 | Accuracy:0.825572 <br> Precision:0.750000 <br> Recall:0.042453 <br> F1:0.080357 | Accuracy:0.902625 <br> Precision:0.801242 <br> Recall:0.608491 <br> F1:0.691689 |
+| Linear SVM <br> C = 500     | Accuracy:0.921253 <br> Precision:0.805128 <br> Recall:0.740566 <br> F1:0.771499| Accuracy:0.898391 <br> Precision:0.693277 <br> Recall:0.778302 <br> F1:0.733333 |Accuracy:0.912786 <br> Precision:0.755869 <br> Recall:0.759434 <br> F1:0.757647 | Accuracy:0.909399 <br> Precision:0.737557 <br> Recall:0.768868 <br> F1:0.752887 |
+| RBF SVM <br> C = 500 <br> gamma = 10 | Accuracy:0.933108 <br> Precision:0.818182 <br> Recall:0.806604 <br> F1:0.812352| Accuracy:0.899238 <br> Precision:0.746032 <br> Recall:0.665094 <br> F1:0.703242 | Accuracy:0.902625 <br> Precision:0.746193 <br> Recall:0.693396 <br> F1:0.718826 | Accuracy:0.919560 <br> Precision:0.800000 <br> Recall:0.735849 <br> F1:0.766585 |
+| Random Forest | Accuracy:0.929721 <br> Precision:0.877193 <br> Recall:0.707547 <br> F1:0.783290| Accuracy:0.922947 <br> Precision:0.823529 <br> Recall:0.726415 <br> F1:0.771930 | Accuracy:0.928874 <br> Precision:0.844086 <br> Recall:0.740566 <br> F1:0.788945 | Accuracy:0.935648 <br> Precision:0.909639 <br> Recall:0.712264 <br> F1:0.798942 |
+ 
