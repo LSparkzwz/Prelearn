@@ -1,14 +1,16 @@
 ### Meaning of the table columns:
 
+#### Sum of word embeddings
+The document embeddings have been created by simply summing the word embeddings.
+
 #### Averaged word embeddings
-Embeddings created with the cell n°5 inside Prelearn.ipynb.  
-Given two tokenized wikipedia documents, each document becomes an averaged word embedding.
+The document embeddings have been created by averaging the word embeddings.
 
 #### Biased: both weight 10% of doc length
-Embeddings created with the cell n°6 inside Prelearn.ipynb.  
+The document embeddings have been created by averaging the word embeddings while giving a weight equal to 10% of the document's length to words inside the documents A and B that also appear in the title of B.
 
 ##### Intuition:
-If I find in A and B the words that make up the title in B, then there's a good chance that B is a prerequisite of A.  
+If I find in the documents A and B the words that make up the title in the document B, then there's a good chance that B is a prerequisite of A.  
 
 ##### Examples of intuition:  
 The wikipedia page of "Light" is a prerequisite of the wikipedia page of "Total internal reflection".  
@@ -24,14 +26,13 @@ After the weight has been given to each word, the documents become an averaged w
 
 
 #### Biased: only A weight 10% of doc length
-Embeddings created with the cell n°6 inside Prelearn.ipynb.  
+The document embeddings have been created by averaging the word embeddings while giving a weight equal to 10% of the document's length to words inside the document A  that also appear in the title of B.
 
 ##### Intuition:
 The same as the previous point, but this time weight are given only to words found in the document A, not the ones in B
 (If I find in A the words that make up the title in B, then there's a good chance that B is a prerequisite of A).  
 
 #### B doc embedding * weight(20)
-Embeddings created with the cell n°5 inside Prelearn.ipynb.  
 The averaged word embedding of the document B get multiplied by 20 in order to see if this difference between the two embeddings (A and B) helps the classifiers somehow.
 
 |  ![Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)  | Sum of word embeddings  | Averaged word embeddings        | Biased: both weight 10% of doc length  | Biased: only A weight 10% of doc length | B doc embedding * weight(20) 
