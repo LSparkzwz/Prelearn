@@ -43,12 +43,12 @@ The same as the previous point, but this time weight are given only to words fou
 #### (Avg)B doc embedding * weight(20):
 The averaged word embedding of the document B get multiplied by 20 in order to see if this difference between the two embeddings (A and B) helps the classifiers somehow.
 
-|  ![Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)  | Sum of word embeddings | Sum by word term frequency
+|  ![Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)  | Sum of word embeddings | (Sum)Word frequency | (Sum)Biased: both weight 10% of doc length 
 | ------------- |-------------| -------------| 
-| Logistic Regression  | Accuracy:0.907705 <br> Precision:0.746411 <br> Recall:0.735849 <br> F1:0.741093 | Accuracy:0.846715 <br> Precision:0.846715 <br> Recall:0.846715 <br> F1:0.846715
-| Linear SVM <br> C = 500     | Accuracy:0.907705 <br> Precision:0.746411 <br> Recall:0.735849 <br> F1:0.741093 | Accuracy:0.889077 <br> Precision:0.672340 <br> Recall:0.745283 <br> F1:0.706935
-| RBF SVM <br> C = 500 <br> gamma = 10 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793
-| Random Forest | Accuracy:0.933108 <br> Precision:0.875706 <br> Recall:0.731132 <br> F1:0.796915 | Accuracy:0.929721 <br> Precision:0.860335 <br> Recall:0.726415 <br> F1:0.787724
+| Logistic Regression  | Accuracy:0.907705 <br> Precision:0.746411 <br> Recall:0.735849 <br> F1:0.741093 | Accuracy:0.846715 <br> Precision:0.846715 <br> Recall:0.846715 <br> F1:0.846715 | Accuracy:0.893311 <br> Precision:0.685345 <br> Recall:0.750000 <br> F1:0.716216
+| Linear SVM <br> C = 500     | Accuracy:0.907705 <br> Precision:0.746411 <br> Recall:0.735849 <br> F1:0.741093 | Accuracy:0.889077 <br> Precision:0.672340 <br> Recall:0.745283 <br> F1:0.706935 | Accuracy:0.842506 <br> Precision:0.546429 <br> Recall:0.721698 <br> F1:0.621951
+| RBF SVM <br> C = 500 <br> gamma = 10 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793
+| Random Forest | Accuracy:0.933108 <br> Precision:0.875706 <br> Recall:0.731132 <br> F1:0.796915 | Accuracy:0.929721 <br> Precision:0.860335 <br> Recall:0.726415 <br> F1:0.787724 | Accuracy:0.925487 <br> Precision:0.844444 <br> Recall:0.716981 <br> F1:0.775510
 
 ### Meaning of the table columns:
 
