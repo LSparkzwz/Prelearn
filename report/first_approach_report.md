@@ -65,7 +65,7 @@ Further explainations on the document embeddings and the validation results test
 * From terminal run: `cat data_mining-pairs_train.csv geometry-pairs_train.csv physics-pairs_train.csv precalculus-pairs_train.csv > train.csv`
 * Rename `ITA_prereq-pages.xml` to `dataset.xml`
 * Upload `train.csv` and `dataset.xml` to the root of "My Drive" of your Google Drive.
-* Run every cell in [init_en.ipynb](https://github.com/LSparkzwz/Prelearn/blob/master/init_it.ipynb).
+* Run every cell in [init_en.ipynb](https://github.com/LSparkzwz/Prelearn/blob/master/init_en.ipynb).
 * Depending on the document embedding that you want to use, run every cell inside its respective ipnyb:
   * [Sum of word embeddings.](https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/sum/we_sum.ipynb)
   * [Averaged word embeddings.](https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/average/we_average.ipynb) 
