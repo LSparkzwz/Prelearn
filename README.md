@@ -7,4 +7,4 @@ More info about the subject here: https://sites.google.com/view/prelearn20/task
 #### In this repository two approaches have been studied:
 
 ### [First approach](https://github.com/LSparkzwz/Prelearn/blob/master/report/first_approach_report.md)
-### Second approach
+### [Second approach](https://github.com/LSparkzwz/Prelearn/blob/master/report/second_approach.md).
