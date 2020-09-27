@@ -19,8 +19,7 @@ This dataset consist of pairs of target and prerequisite concepts (A, B), labell
 Furthermore, the dataset offered by Prelearn is split in different files for each subject: geometry, physics, data mining and precalculus. <br>
 These files have been combined in order to obtain a single bigger dataset. <br> <br>
 
-Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> <br>
-
+Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> 
 <lu>
 <li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
 </lu>
@@ -39,27 +38,61 @@ Each pair A, B can have multiple votes given by different people, for example tw
 
 This dataset has been transformed so that it follows the A,B,0/1 Prelearn structure, where 0/1 is given according to the answer that relationship that received most votes. <br>
 
-Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> <br>
+Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> 
 
 <lu>
 <li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
 </lu>
 </details> 
 
-#### CrowdComp dataset: 
+#### Course dataset: 
 
 <details><summary>Click here to expand</summary>
 The starting dataset has been downloaded from here: https://github.com/harrylclc/RefD-dataset . <br>
 
 This dataset already follows the A,B,0/1 Prelearn structure on a conceptual level, it just needed a translation on the implementation level.  <br>
 
-Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> <br>
+Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> 
 
 <lu>
 <li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
 </lu>
 
 </details>
+
+#### Udacity + edX dataset: 
+
+<details><summary>Click here to expand</summary>
+The starting dataset has been requested from here: http://ai-lab-03.dia.uniroma3.it/datasets/lm2016/ . <br>
+
+This dataset already follows the A,B,0/1 Prelearn structure on a conceptual level, it just needed a translation on the implementation level.  <br>
+
+This dataset doesn't use Wikipedia pages, instead it use files containing the subtitles from Udacity and edX courses. So each title A and B gets replaced with its respective subtitle file so that the dataset follows the following structure:<br> 
+
+<lu>
+<li> Udacity/edX subtitles of A, Udacity/edX subtitles of B, 0 or 1. </li>
+</lu>
+
+</details>
+
+#### Burst dataset: 
+
+<details><summary>Click here to expand</summary>
+
+The starting dataset has been downloaded from here: 
+https://github.com/Teldh/PRET/tree/master/app/datasets . <br>
+
+This dataset follows a vote structure similar to the CrowdComp dataset, this has been translated to the A,B,0/1 Prelearn structure.  <br>
+
+This dataset doesn't use Wikipedia pages, instead it use a single text file containing a text in which every term from the prerequisite dataset appears. Since we don't have real pages for each term here we take the 15 words that appear before each term and the 15 words that appear after each term in order to determinate its context (if a word appears n times n(15+15) words are taken in order to build the context). After doing so the dataset obtains the following structure:<br> 
+
+<lu>
+<li> Context of term A, Context of term A, 0 or 1. </li>
+</lu>
+
+ 
+ 
+</details> 
 
 Each document now gets cleaned so it's easier to create word embeddings with them, this is done by using the [NLTK](https://www.nltk.org/) library. 
 The cleaning process consists in: 
@@ -158,7 +191,7 @@ Further explainations on the document embeddings and the validation results test
 <details><summary>Udacity + edX dataset</summary>
 <p>
 <ul>
-<li> Download the dataset as zip from: https://drive.google.com/drive/folders/1qWOh8NiDyz1Ppt0CEVJkoU4HDJhtBrpT?usp=sharing . </li>
+<li> Request the dataset (you need the subtitles too, not just the prerequisites!) as zip from: http://ai-lab-03.dia.uniroma3.it/datasets/lm2016/ . </li>
 <li> Extract the zip: you should have a folder called <code>edX-Udacity-dataset</code> </li>
 <li> Upload <code>edX-Udacity-dataset</code> to the root of "My Drive" of your Google Drive. </li>
 <li> Run every cell in <a href="https://github.com/LSparkzwz/Prelearn/blob/master/init_en.ipynb">init_en.ipynb</a>. </li>
