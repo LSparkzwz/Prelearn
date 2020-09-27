@@ -94,6 +94,8 @@ This dataset doesn't use Wikipedia pages, instead it use a single text file cont
  
 </details> 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Each document now gets cleaned so it's easier to create word embeddings with them, this is done by using the [NLTK](https://www.nltk.org/) library. 
 The cleaning process consists in: 
 * Tokenization. 
