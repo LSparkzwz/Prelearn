@@ -44,6 +44,20 @@ Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Lig
 <lu>
 <li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
 </lu>
+</details> 
+
+#### CrowdComp dataset: 
+
+<details><summary>Click here to expand</summary>
+The starting dataset has been downloaded from here: https://github.com/harrylclc/RefD-dataset . <br>
+
+This dataset already follows the A,B,0/1 Prelearn structure on a conceptual level, it just needed a translation on the implementation level.  <br>
+
+Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> <br>
+
+<lu>
+<li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
+</lu>
 
 </details>
 
