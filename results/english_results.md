@@ -1,10 +1,12 @@
+<details><summary>Prelearn results</summary>
 |  ![Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)  | Averaged word embeddings | (Avg)Word frequency   | (Avg)Biased: both weight 10% of doc length  | (Avg)Biased: only A weight 10% of doc length | (Avg)B doc embedding * weight(20) 
 | ------------- |-------------| -----------------| ----|---- | ---- | 
 | Logistic Regression  | Accuracy:0.851820 <br> Precision:0.849057 <br> Recall:0.212264 <br> F1:0.339623 | Accuracy:0.820491 <br> Precision:0.000000 <br> Recall:0.000000 <br> F1:0.000000 | Accuracy:0.902625 <br> Precision:0.774011 <br> Recall:0.646226 <br> F1:0.704370 | Accuracy:0.849280 <br> Precision:0.702381 <br> Recall:0.278302 <br> F1:0.398649 | Accuracy:0.905165 <br> Precision:0.804878 <br> Recall:0.622642 <br> F1:0.702128
 | Linear SVM <br> C = 500 | Accuracy:0.922100 <br> Precision:0.815789 <br> Recall:0.731132 <br> F1:0.771144 | Accuracy:0.845893 <br> Precision:0.812500 <br> Recall:0.183962 <br> F1:0.300000 | Accuracy:0.899238 <br> Precision:0.683794 <br> Recall:0.816038 <br> F1:0.744086 | Accuracy:0.906012 <br> Precision:0.720524 <br> Recall:0.778302 <br> F1:0.748299 | Accuracy:0.924640 <br> Precision:0.855491 <br> Recall:0.698113 <br> F1:0.768831
 | RBF SVM <br> C = 500 <br> gamma = 10  | Accuracy:0.910246 <br> Precision:0.773196 <br> Recall:0.707547 <br> F1:0.738916 | Accuracy:0.869602 <br> Precision:0.822222 <br> Recall:0.349057 <br> F1:0.490066 | Accuracy:0.878916 <br> Precision:0.810811 <br> Recall:0.424528 <br> F1:0.557276 | Accuracy:0.887384 <br> Precision:0.811024 <br> Recall:0.485849 <br> F1:0.607670 | Accuracy:0.906859 <br> Precision:0.814815 <br> Recall:0.622642 <br> F1:0.705882
 | Random Forest | Accuracy:0.925487 <br> Precision:0.892405 <br> Recall:0.665094 <br> F1:0.762162 | Accuracy:0.921253 <br> Precision:0.878981 <br> Recall:0.650943 <br> F1:0.747967 | Accuracy:0.920406 <br> Precision:0.797980 <br> Recall:0.745283 <br> F1:0.770732 | Accuracy:0.916173 <br> Precision:0.786802 <br> Recall:0.731132 <br> F1:0.757946 | Accuracy:0.927180 <br> Precision:0.893750 <br> Recall:0.674528 <br> F1:0.768817
-
+</details>
+  
 ### Meaning of the table columns:
 
 #### Averaged word embeddings:
