@@ -1,4 +1,5 @@
-<details><summary><b>Prelearn results</b></summary>
+## Prelearn dataset results
+<details><summary>Click to expand</summary>
 <table>
     <tr>
         <td><b><a href="https://fasttext.cc/docs/en/pretrained-vectors.html">Fasttext</a></b></td>
@@ -80,7 +81,8 @@ The same as the previous point, but this time weight are given only to words fou
 #### (Avg)B doc embedding * weight(20):
 The averaged word embedding of the document B get multiplied by 20 in order to see if this difference between the two embeddings (A and B) helps the classifiers somehow.
 
-<details><summary><b>Prelearn results</b></summary>
+## Prelearn dataset results
+<details><summary>Click to expand</summary>
 <table>
     <tr>
         <td><b><a href="https://fasttext.cc/docs/en/pretrained-vectors.html">Fasttext</a></b></td>
