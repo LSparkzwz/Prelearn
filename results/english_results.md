@@ -1,10 +1,46 @@
-<details><summary>Prelearn results</summary>
-|  ![Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)  | Averaged word embeddings | (Avg)Word frequency   | (Avg)Biased: both weight 10% of doc length  | (Avg)Biased: only A weight 10% of doc length | (Avg)B doc embedding * weight(20) 
-| ------------- |-------------| -----------------| ----|---- | ---- | 
-| Logistic Regression  | Accuracy:0.851820 <br> Precision:0.849057 <br> Recall:0.212264 <br> F1:0.339623 | Accuracy:0.820491 <br> Precision:0.000000 <br> Recall:0.000000 <br> F1:0.000000 | Accuracy:0.902625 <br> Precision:0.774011 <br> Recall:0.646226 <br> F1:0.704370 | Accuracy:0.849280 <br> Precision:0.702381 <br> Recall:0.278302 <br> F1:0.398649 | Accuracy:0.905165 <br> Precision:0.804878 <br> Recall:0.622642 <br> F1:0.702128
-| Linear SVM <br> C = 500 | Accuracy:0.922100 <br> Precision:0.815789 <br> Recall:0.731132 <br> F1:0.771144 | Accuracy:0.845893 <br> Precision:0.812500 <br> Recall:0.183962 <br> F1:0.300000 | Accuracy:0.899238 <br> Precision:0.683794 <br> Recall:0.816038 <br> F1:0.744086 | Accuracy:0.906012 <br> Precision:0.720524 <br> Recall:0.778302 <br> F1:0.748299 | Accuracy:0.924640 <br> Precision:0.855491 <br> Recall:0.698113 <br> F1:0.768831
-| RBF SVM <br> C = 500 <br> gamma = 10  | Accuracy:0.910246 <br> Precision:0.773196 <br> Recall:0.707547 <br> F1:0.738916 | Accuracy:0.869602 <br> Precision:0.822222 <br> Recall:0.349057 <br> F1:0.490066 | Accuracy:0.878916 <br> Precision:0.810811 <br> Recall:0.424528 <br> F1:0.557276 | Accuracy:0.887384 <br> Precision:0.811024 <br> Recall:0.485849 <br> F1:0.607670 | Accuracy:0.906859 <br> Precision:0.814815 <br> Recall:0.622642 <br> F1:0.705882
-| Random Forest | Accuracy:0.925487 <br> Precision:0.892405 <br> Recall:0.665094 <br> F1:0.762162 | Accuracy:0.921253 <br> Precision:0.878981 <br> Recall:0.650943 <br> F1:0.747967 | Accuracy:0.920406 <br> Precision:0.797980 <br> Recall:0.745283 <br> F1:0.770732 | Accuracy:0.916173 <br> Precision:0.786802 <br> Recall:0.731132 <br> F1:0.757946 | Accuracy:0.927180 <br> Precision:0.893750 <br> Recall:0.674528 <br> F1:0.768817
+<details><summary><b>Prelearn results</b></summary>
+<table>
+    <tr>
+        <td><b><a href="https://fasttext.cc/docs/en/pretrained-vectors.html">Fasttext</a></b></td>
+        <td><b>Averaged word embeddings</b></td>
+        <td><b>(Avg)Word frequency</b></td>
+        <td><b>(Avg)Biased: both weight 10% of doc length</b></td>
+        <td><b>(Avg)Biased: only A weight 10% of doc length</b></td>
+        <td><b>(Avg)B doc embedding * weight(20)</b></td>
+    </tr>
+    <tr>
+        <td><b>Logistic Regression</b></td>
+        <td>Accuracy:0.851820 <br> Precision:0.849057 <br> Recall:0.212264 <br> F1:0.339623</td>
+        <td>Accuracy:0.820491 <br> Precision:0.000000 <br> Recall:0.000000 <br> F1:0.000000</td>
+        <td>Accuracy:0.902625 <br> Precision:0.774011 <br> Recall:0.646226 <br> F1:0.704370</td>
+        <td>Accuracy:0.849280 <br> Precision:0.702381 <br> Recall:0.278302 <br> F1:0.398649</td>
+        <td>Accuracy:0.905165 <br> Precision:0.804878 <br> Recall:0.622642 <br> F1:0.702128</td>
+    </tr>
+    <tr>
+        <td><b>Linear SVM <br> C = 500</b></td>
+        <td>Accuracy:0.922100 <br> Precision:0.815789 <br> Recall:0.731132 <br> F1:0.771144</td>
+        <td>Accuracy:0.845893 <br> Precision:0.812500 <br> Recall:0.183962 <br> F1:0.300000</td>
+        <td>Accuracy:0.899238 <br> Precision:0.683794 <br> Recall:0.816038 <br> F1:0.744086</td>
+        <td>Accuracy:0.906012 <br> Precision:0.720524 <br> Recall:0.778302 <br> F1:0.748299</td>
+        <td>Accuracy:0.924640 <br> Precision:0.855491 <br> Recall:0.698113 <br> F1:0.768831</td>
+    </tr>
+    <tr>
+        <td><b>RBF SVM <br> C = 500 <br> gamma = 10</b></td>
+        <td>Accuracy:0.910246 <br> Precision:0.773196 <br> Recall:0.707547 <br> F1:0.738916</td>
+        <td>Accuracy:0.869602 <br> Precision:0.822222 <br> Recall:0.349057 <br> F1:0.490066</td>
+        <td>Accuracy:0.878916 <br> Precision:0.810811 <br> Recall:0.424528 <br> F1:0.557276</td>
+        <td>Accuracy:0.887384 <br> Precision:0.811024 <br> Recall:0.485849 <br> F1:0.607670</td>
+        <td>Accuracy:0.906859 <br> Precision:0.814815 <br> Recall:0.622642 <br> F1:0.705882</td>
+    </tr>
+    <tr>
+        <td><b>Random Forest</b></td>
+        <td>Accuracy:0.925487 <br> Precision:0.892405 <br> Recall:0.665094 <br> F1:0.762162</td>
+        <td>Accuracy:0.921253 <br> Precision:0.878981 <br> Recall:0.650943 <br> F1:0.747967</td>
+        <td>Accuracy:0.920406 <br> Precision:0.797980 <br> Recall:0.745283 <br> F1:0.770732</td>
+        <td>Accuracy:0.916173 <br> Precision:0.786802 <br> Recall:0.731132 <br> F1:0.757946</td>
+        <td>Accuracy:0.927180 <br> Precision:0.893750 <br> Recall:0.674528 <br> F1:0.768817</td>
+    </tr>
+</table>
 </details>
   
 ### Meaning of the table columns:
@@ -44,13 +80,50 @@ The same as the previous point, but this time weight are given only to words fou
 #### (Avg)B doc embedding * weight(20):
 The averaged word embedding of the document B get multiplied by 20 in order to see if this difference between the two embeddings (A and B) helps the classifiers somehow.
 
-
-|  ![Fasttext](https://fasttext.cc/docs/en/pretrained-vectors.html)  | Sum of word embeddings | (Sum)Word frequency | (Sum)Biased: both weight 10% of doc length | (Sum)Biased: only A weight 10% of doc length | (Sum)B doc embedding * weight(20) 
-| ------------- |-------------| -----------------| ----|---- | ---- | 
-| Logistic Regression  | Accuracy:0.911939 <br> Precision:0.752336 <br> Recall:0.759434 <br> F1:0.755869 | Accuracy:0.917019 <br> Precision:0.806452 <br> Recall:0.707547 <br> F1:0.753769 | Accuracy:0.902625 <br> Precision:0.715556 <br> Recall:0.759434 <br> F1:0.736842 | Accuracy:0.894157 <br> Precision:0.682008 <br> Recall:0.768868 <br> F1:0.722838 | Accuracy:0.923793 <br> Precision:0.801980 <br> Recall:0.764151 <br> F1:0.782609
-| Linear SVM <br> C = 500     | Accuracy:0.884843 <br> Precision:0.787879 <br> Recall:0.490566 <br> F1:0.604651 | Accuracy:0.857748 <br> Precision:0.600917 <br> Recall:0.617925 <br> F1:0.609302 | Accuracy:0.840813 <br> Precision:0.544776 <br> Recall:0.688679 <br> F1:0.608333 | Accuracy:0.868755 <br> Precision:0.647668 <br> Recall:0.589623 <br> F1:0.617284 | Accuracy:0.892464 <br> Precision:0.692308 <br> Recall:0.721698 <br> F1:0.706697
-| RBF SVM <br> C = 500 <br> gamma = 10  | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793 | Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793
-| Random Forest | Accuracy:0.930567 <br> Precision:0.891566 <br> Recall:0.698113 <br> F1:0.783069 | Accuracy:0.922100 <br> Precision:0.861446 <br> Recall:0.674528 <br> F1:0.756614 | Accuracy:0.915326 <br> Precision:0.791667 <br> Recall:0.716981 <br> F1:0.752475 | Accuracy:0.915326 <br> Precision:0.791667 <br> Recall:0.716981 <br> F1:0.752475 | Accuracy:0.922100 <br> Precision:0.870370 <br> Recall:0.665094 <br> F1:0.754011
+<details><summary><b>Prelearn results</b></summary>
+<table>
+    <tr>
+        <td><b><a href="https://fasttext.cc/docs/en/pretrained-vectors.html">Fasttext</a></b></td>
+        <td><b>Averaged word embeddings</b></td>
+        <td><b>(Sum)Word frequency</b></td>
+        <td><b>(Sum)Biased: both weight 10% of doc length</b></td>
+        <td><b>(Sum)Biased: only A weight 10% of doc length</b></td>
+        <td><b>(Sum)B doc embedding * weight(20)</b></td>
+    </tr>
+    <tr>
+        <td><b>Logistic Regression</b></td>
+        <td>Accuracy:0.911939 <br> Precision:0.752336 <br> Recall:0.759434 <br> F1:0.755869</td>
+        <td>Accuracy:0.917019 <br> Precision:0.806452 <br> Recall:0.707547 <br> F1:0.753769</td>
+        <td>Accuracy:0.902625 <br> Precision:0.715556 <br> Recall:0.759434 <br> F1:0.736842</td>
+        <td>Accuracy:0.894157 <br> Precision:0.682008 <br> Recall:0.768868 <br> F1:0.722838</td>
+        <td>Accuracy:0.923793 <br> Precision:0.801980 <br> Recall:0.764151 <br> F1:0.782609</td>
+    </tr>
+    <tr>
+        <td><b>Linear SVM <br> C = 500</b></td>
+        <td>Accuracy:0.884843 <br> Precision:0.787879 <br> Recall:0.490566 <br> F1:0.604651</td>
+        <td>Accuracy:0.857748 <br> Precision:0.600917 <br> Recall:0.617925 <br> F1:0.609302</td>
+        <td>Accuracy:0.840813 <br> Precision:0.544776 <br> Recall:0.688679 <br> F1:0.608333</td>
+        <td>Accuracy:0.868755 <br> Precision:0.647668 <br> Recall:0.589623 <br> F1:0.617284</td>
+        <td>Accuracy:0.892464 <br> Precision:0.692308 <br> Recall:0.721698 <br> F1:0.706697</td>
+    </tr>
+    <tr>
+        <td><b>RBF SVM <br> C = 500 <br> gamma = 10</b></td>
+        <td>Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793</td>
+        <td>Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793</td>
+        <td>Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793</td>
+        <td>Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793</td>
+        <td>Accuracy:0.835732 <br> Precision:0.950000 <br> Recall:0.089623 <br> F1:0.163793</td>
+    </tr>
+    <tr>
+        <td><b>Random Forest</b></td>
+        <td>Accuracy:0.930567 <br> Precision:0.891566 <br> Recall:0.698113 <br> F1:0.783069</td>
+        <td>Accuracy:0.922100 <br> Precision:0.861446 <br> Recall:0.674528 <br> F1:0.756614</td>
+        <td>Accuracy:0.915326 <br> Precision:0.791667 <br> Recall:0.716981 <br> F1:0.752475</td>
+        <td>Accuracy:0.915326 <br> Precision:0.791667 <br> Recall:0.716981 <br> F1:0.752475</td>
+        <td>Accuracy:0.922100 <br> Precision:0.870370 <br> Recall:0.665094 <br> F1:0.754011</td>
+    </tr>
+</table>
+</details>
 
 ### Meaning of the table columns:
 
