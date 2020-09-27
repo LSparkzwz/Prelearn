@@ -70,6 +70,26 @@ Further explainations on the document embeddings and the validation results test
 </ul> 
  </p>
  </details>
+ <details><summary>CrowdComp dataset</summary>
+<p>
+<ul>
+<li> Download the dataset as zip from: https://github.com/harrylclc/RefD-dataset . </li>
+<li> Extract the zip: you should have a folder called <code>RefD-dataset-master</code> </li>
+<li> Upload <code>RefD-dataset-master</code> to the root of "My Drive" of your Google Drive. </li>
+<li> Run every cell in <a href="https://github.com/LSparkzwz/Prelearn/blob/master/init_en.ipynb">init_en.ipynb</a>. </li>
+<li> Run every cell in <a href="https://github.com/LSparkzwz/Prelearn/blob/master/dataset_init/crowdComp/dataset_init_en.ipynb">dataset_init_en.ipynb</a>. </li>
+<li> Pick one type of word embedding you'd like to try from the following list, and run every cell inside its respective ipnyb: <ul> 
+  <li> <a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/sum/we_sum.ipynb">Sum of word embeddings.</a> </li>
+  <li> <a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/average/we_average.ipynb">Averaged word embeddings.</a> </li>
+  <li> <a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/sum/we_word_frequency.ipynb">Sum</a>/<a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/average/we_word_frequency.ipynb">Average</a> of word embeddings weighted by term frequency. </li>
+  <li> <a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/sum/we_biased_AB.ipynb">Sum</a>/<a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/average/we_biased_AB.ipynb">Average</a> of word embeddings in which words that appear inside the title of B are given a weight equal to 10% of their document (A or B) length. </li>
+  <li> (<a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/sum/we_biased_A.ipynb">Sum</a>/<a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/average/we_biased_A.ipynb">Average</a>) Same as above but the weight is only given to words inside the document A, while B stays the same as what you'd obtain with just a sum or average. </li>
+  <li> <a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/sum/we_B_weight.ipynb">Sum</a>/<a href="https://github.com/LSparkzwz/Prelearn/blob/master/embeddings/english/average/we_B_weight.ipynb">Average</a> of word embeddings in which the B document embedding has been multipled by a weight equal to 20, A instead stays the same as what you'd obtain with just a sum or average. </li> 
+</ul> </li>
+<li> Run every cell inside <a href="https://github.com/LSparkzwz/Prelearn/blob/master/classifiers.ipynb">classifiers.ipynb</a>.
+</ul> 
+ </p>
+ </details>
 
 ### How to run (Italian version)(Only avaialable dataset is Prelearn): 
 * Request the starting dataset here: https://docs.google.com/forms/d/e/1FAIpQLSdz4q7H7Savij_HGV2YDwZrBP5KUIWU4vRfkcHAnsdKJ4xvxw/viewform .
