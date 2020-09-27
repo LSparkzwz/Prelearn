@@ -103,35 +103,35 @@
     </tr>
     <tr>
         <td><b>Logistic Regression</b></td>
-        <td>Accuracy:0.826 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
-        <td>Accuracy:0.826 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
-        <td>Accuracy:0.829 <br> Precision:0.6 <br> Recall:0.056 <br> F1:0.102</td>
-        <td>Accuracy:0.827 <br> Precision:1.0 <br> Recall:0.009 <br> F1:0.018</td>
-        <td>Accuracy:0.806 <br> Precision:0.227 <br> Recall:0.046 <br> F1:0.077</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.666667 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.666667 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
     </tr>
     <tr>
         <td><b>Linear SVM <br> C = 500</b></td>
-        <td>Accuracy:0.758 <br> Precision:0.267 <br> Recall:0.222 <br> F1:0.242</td>
-        <td>Accuracy:0.817 <br> Precision:0.308 <br> Recall:0.037 <br> F1:0.066</td>
-        <td>Accuracy:0.756 <br> Precision:0.283 <br> Recall:0.259 <br> F1:0.271</td>
-        <td>Accuracy:0.758 <br> Precision:0.281 <br> Recall:0.25 <br> F1:0.265</td>
-        <td>Accuracy:0.793 <br> Precision:0.333 <br> Recall:0.185 <br> F1:0.238</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.759259 <br> Precision:0.833333 <br> Recall:0.294118 <br> F1:0.434783</td>
+        <td>Accuracy:0.703704 <br> Precision:0.666667 <br> Recall:0.117647 <br> F1:0.2</td>
+        <td>Accuracy:0.648148 <br> Precision:0.25 <br> Recall:0.058824 <br> F1:0.095238</td>
     </tr>
     <tr>
         <td><b>RBF SVM <br> C = 500 <br> gamma = 10</b></td>
-        <td>Accuracy:0.787 <br> Precision:0.333 <br> Recall:0.222 <br> F1:0.267</td>
-        <td>Accuracy:0.824 <br> Precision:0.4 <br> Recall:0.019 <br> F1:0.035</td>
-        <td>Accuracy:0.788 <br> Precision:0.323 <br> Recall:0.194 <br> F1:0.243</td>
-        <td>Accuracy:0.787 <br> Precision:0.324 <br> Recall:0.204 <br> F1:0.25</td>
-        <td>Accuracy:0.796 <br> Precision:0.235 <br> Recall:0.074 <br> F1:0.113</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.058824 <br> F1:0.105263</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
+        <td>Accuracy:0.666667 <br> Precision:0.333333 <br> Recall:0.058824 <br> F1:0.1</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
     </tr>
     <tr>
         <td><b>Random Forest</b></td>
-        <td>Accuracy:0.829 <br> Precision:0.536 <br> Recall:0.139 <br> F1:0.221</td>
-        <td>Accuracy:0.83 <br> Precision:0.565 <br> Recall:0.12 <br> F1:0.198</td>
-        <td>Accuracy:0.83 <br> Precision:0.565 <br> Recall:0.12 <br> F1:0.198</td>
-        <td>Accuracy:0.83 <br> Precision:0.565 <br> Recall:0.12 <br> F1:0.198</td>
-        <td>Accuracy:0.826 <br> Precision:0.5 <br> Recall:0.13 <br> F1:0.206</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.058824 <br> F1:0.105263</td>
+        <td>Accuracy:0.703704 <br> Precision:0.666667 <br> Recall:0.117647 <br> F1:0.2</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
     </tr>
 </table>
 </details>
