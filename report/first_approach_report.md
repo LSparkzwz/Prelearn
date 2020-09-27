@@ -10,30 +10,49 @@ Each dataset has a different structure, therefore they all get first transformed
 
 #### Prelearn dataset:
 <details><summary>Click here to expand</summary>
-The starting dataset has been requested from here: https://sites.google.com/view/prelearn20/data?authuser=0 . 
-This dataset consist of pairs of target and prerequisite concepts (A, B), labelled as follows:  
+The starting dataset has been requested from here: https://sites.google.com/view/prelearn20/data?authuser=0 . <br>
+This dataset consist of pairs of target and prerequisite concepts (A, B), labelled as follows: <br> <br>
 <lu>
 <li> 1 if B is a prerequisite of A; </li>
 <li> 0 in all other cases. </li>
-</lu>
-Furthermore, the dataset offered by Prelearn is split in different files for each subject: geometry, physics, data mining and precalculus. 
-These files have been combined in order to obtain a single bigger dataset. 
+</lu> <br>
+Furthermore, the dataset offered by Prelearn is split in different files for each subject: geometry, physics, data mining and precalculus. <br>
+These files have been combined in order to obtain a single bigger dataset. <br> <br>
 
-Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure:  
+Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> <br>
+
 <lu>
 <li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
 </lu>
-Each document now gets cleaned so it's easier to create word embeddings with them, this is done by using the [NLTK](https://www.nltk.org/) library. 
-The cleaning process consists in: 
-<lu>
-<li> Tokenization. </li>
-<li> Conversion to lower case. </li>
-<li> Removal of punctuation. </li>
-<li> Removal of stop words.  </li>
-</lu>
 </details>
 
+#### CrowdComp dataset:
+<details><summary>Click here to expand</summary>
+The starting dataset has been downloaded from here: https://github.com/harrylclc/RefD-dataset . <br>
+Each row of this dataset represents a vote that expresses the relationship between two concepts A and B. <br><br>
+<lu>
+<li> A is prerequisite of B. </li>
+<li> B is prerequisite of A. </li>
+<li> other (there's no prerequisite). </li>
+</lu><br>
+Each pair A, B can have multiple votes given by different people, for example two people say there's no prerequisite while a third one says A is prerequisite of B. <br>
 
+This dataset has been transformed so that it follows the A,B,0/1 Prelearn structure, where 0/1 is given according to the answer that relationship that received most votes. <br>
+
+Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure: <br> <br>
+
+<lu>
+<li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
+</lu>
+
+</details>
+
+Each document now gets cleaned so it's easier to create word embeddings with them, this is done by using the [NLTK](https://www.nltk.org/) library. 
+The cleaning process consists in: 
+* Tokenization. 
+* Conversion to lower case. 
+* Removal of punctuation. 
+* Removal of stop words.  
 
 Each concept A and B therefore gets transformed into an array of tokens. Each token gets then transformed into a word embedding which have been obtained using the respective Italian or English [FastText model](https://fasttext.cc/docs/en/pretrained-vectors.html). The word embeddings obtained have 300 dimensions.
 
