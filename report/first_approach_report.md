@@ -4,24 +4,36 @@ The validation scores are then calculated by comparing the results given by the 
 
 In this approach different classifiers and different datasets in which document embeddings have been created differently have been tested. Also two languages have been tested: Italian and English.
 
-#### How the datasets have been created: 
+### How the datasets have been created: 
+
+Each dataset has a different structure, therefore they all get first transformed into datasets with the same structure so that document embeddings can be created without compatibility problems:
+
+#### Prelearn dataset:
+<details><summary>Click here to expand</summary>
 The starting dataset has been requested from here: https://sites.google.com/view/prelearn20/data?authuser=0 . 
 This dataset consist of pairs of target and prerequisite concepts (A, B), labelled as follows:  
-* 1 if B is a prerequisite of A;  
-* 0 in all other cases.
-
+<lu>
+<li> 1 if B is a prerequisite of A; </li>
+<li> 0 in all other cases. </li>
+</lu>
 Furthermore, the dataset offered by Prelearn is split in different files for each subject: geometry, physics, data mining and precalculus. 
 These files have been combined in order to obtain a single bigger dataset. 
 
 Since the prerequisite concepts (A,B) right now consist of just titles (ex. "Light"), these titles have been replaced by their respective Wikipedia pages through the use of [Wikipedia-API](https://pypi.org/project/Wikipedia-API/). So now the dataset has the following structure:  
-* Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. 
-
+<lu>
+<li> Title of A + Wikipedia page of A, Title of B + Wikipedia page of B, 0 or 1. </li>
+</lu>
 Each document now gets cleaned so it's easier to create word embeddings with them, this is done by using the [NLTK](https://www.nltk.org/) library. 
 The cleaning process consists in: 
-* Tokenization.
-* Conversion to lower case. 
-* Removal of punctuation. 
-* Removal of stop words.  
+<lu>
+<li> Tokenization. </li>
+<li> Conversion to lower case. </li>
+<li> Removal of punctuation. </li>
+<li> Removal of stop words.  </li>
+</lu>
+</details>
+
+
 
 Each concept A and B therefore gets transformed into an array of tokens. Each token gets then transformed into a word embedding which have been obtained using the respective Italian or English [FastText model](https://fasttext.cc/docs/en/pretrained-vectors.html). The word embeddings obtained have 300 dimensions.
 
@@ -48,7 +60,7 @@ Further explainations on the document embeddings and the validation results test
 
 ### How to run (English version): 
 
-* Choose what dataset you'd like to test by expanding its option:
+* Choose what dataset you'd like to test by clicking its option:
 <details><summary>Prelearn dataset</summary>
 <p>
 <ul>
