@@ -278,35 +278,35 @@ The averaged word embedding of the document B get multiplied by 20 in order to s
     </tr>
     <tr>
         <td><b>Logistic Regression</b></td>
-        <td>Accuracy:0.733 <br> Precision:0.282 <br> Recall:0.343 <br> F1:0.31</td>
-        <td>Accuracy:0.817 <br> Precision:0.439 <br> Recall:0.167 <br> F1:0.242</td>
-        <td>Accuracy:0.766 <br> Precision:0.32 <br> Recall:0.306 <br> F1:0.313</td>
-        <td>Accuracy:0.714 <br> Precision:0.248 <br> Recall:0.315 <br> F1:0.278</td>
-        <td>Accuracy:0.769 <br> Precision:0.316 <br> Recall:0.278 <br> F1:0.296</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.058824 <br> F1:0.105263</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
+        <td>Accuracy:0.648148 <br> Precision:0.333333 <br> Recall:0.117647 <br> F1:0.173913</td>
+        <td>Accuracy:0.62963 <br> Precision:0.285714 <br> Recall:0.117647 <br> F1:0.166667</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.058824 <br> F1:0.105263</td>
     </tr>
     <tr>
         <td><b>Linear SVM <br> C = 500</b></td>
-        <td>Accuracy:0.711 <br> Precision:0.248 <br> Recall:0.324 <br> F1:0.281</td>
-        <td>Accuracy:0.733 <br> Precision:0.279 <br> Recall:0.333 <br> F1:0.304</td>
-        <td>Accuracy:0.67 <br> Precision:0.221 <br> Recall:0.352 <br> F1:0.271</td>
-        <td>Accuracy:0.74 <br> Precision:0.274 <br> Recall:0.296 <br> F1:0.284</td>
-        <td>Accuracy:0.679 <br> Precision:0.206 <br> Recall:0.296 <br> F1:0.243</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.058824 <br> F1:0.105263</td>
+        <td>Accuracy:0.666667 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.62963 <br> Precision:0.363636 <br> Recall:0.235294 <br> F1:0.285714</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.529412 <br> F1:0.514286</td>
+        <td>Accuracy:0.648148 <br> Precision:0.45 <br> Recall:0.529412 <br> F1:0.486486</td>
     </tr>
     <tr>
         <td><b>RBF SVM <br> C = 500 <br> gamma = 10</b></td>
-        <td>Accuracy:0.829 <br> Precision:0.75 <br> Recall:0.028 <br> F1:0.054</td>
-        <td>Accuracy:0.822 <br> Precision:0.375 <br> Recall:0.028 <br> F1:0.052</td>
-        <td>Accuracy:0.822 <br> Precision:0.333 <br> Recall:0.019 <br> F1:0.035</td>
-        <td>Accuracy:0.827 <br> Precision:0.667 <br> Recall:0.019 <br> F1:0.036</td>
-        <td>Accuracy:0.829 <br> Precision:0.75 <br> Recall:0.028 <br> F1:0.054</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
     </tr>
     <tr>
         <td><b>Random Forest</b></td>
-        <td>Accuracy:0.83 <br> Precision:0.571 <br> Recall:0.111 <br> F1:0.186</td>
-        <td>Accuracy:0.827 <br> Precision:0.529 <br> Recall:0.083 <br> F1:0.144</td>
-        <td>Accuracy:0.826 <br> Precision:0.5 <br> Recall:0.139 <br> F1:0.217</td>
-        <td>Accuracy:0.83 <br> Precision:0.56 <br> Recall:0.13 <br> F1:0.211</td>
-        <td>Accuracy:0.829 <br> Precision:0.545 <br> Recall:0.111 <br> F1:0.185</td>
+        <td>Accuracy:0.722222 <br> Precision:1.0 <br> Recall:0.117647 <br> F1:0.210526</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
+        <td>Accuracy:0.685185 <br> Precision:0.0 <br> Recall:0.0 <br> F1:0.0</td>
+        <td>Accuracy:0.685185 <br> Precision:0.5 <br> Recall:0.058824 <br> F1:0.105263</td>
+        <td>Accuracy:0.703704 <br> Precision:1.0 <br> Recall:0.058824 <br> F1:0.111111</td>
     </tr>
 </table>
 </details>
